@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic metadata & responsive viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Page title shown in the browser tab -->
+    <title>Contact</title>
+
+    <!-- Main stylesheet (shared across pages) -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ===================== Sticky Header ===================== -->
+
+    <header class="site-header">
+        <nav class="nav">
+            <a class="brand" href="index.html" aria-label="Home">
+                <img src="images/Rana Logo.png" alt="Logo" />
+                <span class="sr-only">Home</span> <!-- Screen-reader label only -->
+            </a>
+
+            <!-- Primary navigation links -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= Main: contact form section ================= -->
+    <main class="contact">
+        <h1 class="section-title" style="text-align:center;margin:22px 0 6px;">Contact Me</h1>
+
+        <p class="contact-lede">Have a question or feedback? Send me a message below.</p>
+
+
+        <form class="contact-form" method="post" action="https://webhook.site/3501de94-6784-49be-96a6-6ebaa1e4aace"
+            accept-charset="UTF-8" autocomplete="on">
+
+            <!-- Name (required text input with basic length constraints) -->
+            <div class="field">
+                <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
+                <input id="name" name="name" type="text" placeholder="Your full name" required minlength="2"
+                    maxlength="60" />
+            </div>
+
+            <!-- Email (optional; uses email input + browser validation) -->
+            <div class="field">
+                <label for="email">Email (optional)</label>
+                <input id="email" name="email" type="email" inputmode="email" autocomplete="email"
+                    placeholder="you@example.com" />
+            </div>
+
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="10" placeholder="Write your message…"></textarea>
+            </div>
+
+            <!-- Message Type (required radio group; user must choose one) -->
+            <fieldset class="field">
+                <legend>Message Type <span class="req" aria-hidden="true">*</span></legend>
+
+                <!-- Option 1: Inquiry -->
+                <label class="radio">
+                    <input type="radio" name="message_type" value="Inquiry" required />
+                    <span>Inquiry</span>
+                </label>
+
+                <!-- Option 2: Complaint -->
+                <label class="radio">
+                    <input type="radio" name="message_type" value="Complaint" required />
+                    <span>Complaint</span>
+                </label>
+            </fieldset>
+            <div class="actions-out">
+                <button type="submit" form="contactForm" class="btn-grad">Send Message</button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Rana | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

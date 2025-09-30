@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic metadata & responsive viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Page title shown in browser tab -->
+    <title>Rana Portfolio</title>
+
+    <!-- Main stylesheet and icon library (Boxicons) -->
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ===================== Sticky Header ===================== -->
+    <header class="site-header">
+        <nav class="nav">
+            <a class="brand" href="index.html" aria-label="Home">
+                <img src="Images/Rana Logo.png" alt="Rana logo" />
+                <span class="sr-only">Home</span> <!-- Accessible text for screen readers -->
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===================== Hero (intro section with profile photo + summary) ===================== -->
+    <section class="hero" id="home">
+        <div class="hero-inner">
+            <div class="hero-img">
+                <img src="Images/Rana Profile.png" alt="Rana portrait">
+            </div>
+
+            <div class="hero-copy">
+                <h1>Hi, It’s <span class="grad">Rana</span></h1>
+                <h3>I’m a <span class="grad">Senior IT Student</span></h3>
+
+                <p class="lede">
+                    I’m a senior IT student at the FCIT King Abdulaziz University, currently navigating the many paths
+                    the tech world has to offer. Lately, I’ve found myself drawn to web development and UX/UI design
+                    areas where creativity meets logic, and small details make a big difference.
+                    Always eager to learn, improve, and take on new challenges.
+                </p>
+                <nav class="section-nav" aria-label="In-page sections">
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#volunteer">Volunteering</a>
+                </nav>
+
+                <div class="social-row">
+                    <a href="https://github.com/RanaAlsaggaf" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="bx bxl-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rana-alsaggaf-47a407291/" target="_blank" rel="noopener"
+                        aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
+                    <a href="https://x.com/RannsgfIT" target="_blank" rel="noopener" aria-label="X">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M18.244 2H21.5l-7.5 8.57L22.5 22h-6.61l-5.17-6.16L4.8 22H1.5l8.02-9.16L1 2h6.75l4.66 5.66L18.244 2Zm-1.16 17.62h1.83L7.01 4.28H5.06L17.084 19.62Z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:rana.als145f@gmail.com" aria-label="Send me an email">Email me</a>
+                    <a href="tel:+966545991676" aria-label="Call me">Call me</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== Education ===================== -->
+    <section class="education" id="education">
+        <h2 class="section-title">Education</h2>
+
+        <div class="edu-grid">
+            <article class="edu-card outline hover-fill">
+                <div class="icon"><i class="bx bxs-graduation"></i></div>
+                <h3>IT Bachelor’s Degree</h3>
+                <p>FCIT at King Abdulaziz University</p>
+            </article>
+
+            <article class="edu-card outline hover-fill">
+                <div class="icon"><i class="bx bxl-google"></i></div>
+                <h3>Google UX Design</h3>
+                <p>Professional Certificate</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- ===================== Skills ===================== -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <!-- Four cards for skill categories -->
+        <div class="skills-grid">
+            <!-- Programming Languages -->
+            <article class="skill-card outline hover-fill">
+                <div class="skill-header">
+                    <div class="icon"><i class="bx bxs-terminal"></i></div>
+                    <h3>Programming Languages</h3>
+                </div>
+                <ul class="chip-list">
+                    <li class="chip"><i class="bx bxl-java"></i> Java</li>
+                    <li class="chip"><i class="bx bxl-html5"></i> HTML</li>
+                </ul>
+            </article>
+
+            <!-- SQL & Business Intelligence -->
+            <article class="skill-card outline hover-fill">
+                <div class="skill-header">
+                    <div class="icon"><i class="bx bx-data"></i></div>
+                    <h3>SQL &amp; Business Intelligence</h3>
+                </div>
+                <ul class="chip-list">
+                    <li class="chip"><i class="bx bx-data"></i> SQL</li>
+                    <li class="chip"><i class="bx bx-bar-chart-alt-2"></i> Power BI</li>
+                    <li class="chip"><i class="bx bx-bullseye"></i> KPI Design</li>
+                    <li class="chip"><i class="bx bx-check-shield"></i> Data Validation</li>
+                </ul>
+            </article>
+
+            <!-- UI/UX Design -->
+            <article class="skill-card outline hover-fill">
+                <div class="skill-header">
+                    <div class="icon"><i class="bx bxs-palette"></i></div>
+                    <h3>UI/UX Design</h3>
+                </div>
+                <ul class="chip-list">
+                    <li class="chip"><i class="bx bx-layout"></i> UI/UX</li>
+                </ul>
+            </article>
+
+            <!-- Tools -->
+            <article class="skill-card outline hover-fill">
+                <div class="skill-header">
+                    <div class="icon"><i class="bx bx-cog"></i></div>
+                    <h3>Tools</h3>
+                </div>
+                <ul class="chip-list">
+                    <li class="chip"><i class="bx bxl-figma"></i> Figma</li>
+                    <li class="chip"><i class="bx bxl-microsoft"></i> MS Office</li>
+                    <li class="chip"><i class="bx bxl-github"></i> GitHub</li>
+                    <li class="chip"><i class="bx bxl-notion"></i> Notion</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <!-- ===================== Experience ===================== -->
+    <section class="experience" id="experience">
+        <h2 class="section-title">Experience</h2>
+
+        <!-- Internship card: company image + details -->
+        <article class="exp-card outline ">
+            <figure class="exp-media">
+                <img src="Images/saudia-technic.PNG" alt="IT COOP Trainee at Saudia Technic">
+                <figcaption><span class="badge">Internship</span></figcaption>
+            </figure>
+
+            <div class="exp-content">
+                <header class="exp-head">
+                    <h3>IT COOP Trainee</h3>
+                    <p class="exp-company">Saudia Technic</p>
+                    <p class="exp-meta">Jun 2024 – Sep 2024 · Jeddah, KSA</p>
+                </header>
+
+                <p class="exp-intro">Gained hands-on experience across multiple IT departments, including:</p>
+                <ul class="exp-bullets">
+                    <li>Delivered IT support by troubleshooting issues, managing Active Directory, and configuring
+                        devices.</li>
+                    <li>Developed SQL queries and Power BI dashboards, including a production-ready solution for end
+                        users.</li>
+                    <li>Contributed to system security, virtualization, and UI/UX design, creating a reusable component
+                        library for future projects.</li>
+                </ul>
+
+                <!-- Skill tags related to the internship -->
+                <ul class="chip-list exp-tags">
+                    <li class="chip">Power BI</li>
+                    <li class="chip">SQL</li>
+                    <li class="chip">Active Directory</li>
+                    <li class="chip">UI/UX</li>
+                    <li class="chip">Virtualization</li>
+                </ul>
+            </div>
+        </article>
+    </section>
+
+    <!-- ===================== Volunteering Timeline ===================== -->
+    <section class="volunteer" id="volunteer">
+        <h2 class="section-title">Volunteering</h2>
+
+        <!-- Ordered list creates the vertical timeline -->
+        <ol class="timeline">
+            <!-- 1) TechHub -->
+            <li class="timeline-item">
+                <div class="tl-badge">
+                    <img src="Images/TechHub.png" alt="TechHub logo">
+                </div>
+                <article class="tl-card hover-fill">
+                    <header>
+                        <h3 class="tl-title">Media and Marketing Department Member</h3>
+                        <p class="tl-org">TechHub</p>
+                        <p class="tl-meta">Jul 2025 – Present</p>
+                    </header>
+                </article>
+            </li>
+
+            <!-- 2) Manufacturing Community -->
+            <li class="timeline-item">
+                <div class="tl-badge">
+                    <img src="Images/Manufacturing Community.png" alt="Manufacturing Community logo">
+                </div>
+                <article class="tl-card hover-fill">
+                    <header>
+                        <h3 class="tl-title">Media and Marketing Department Member</h3>
+                        <p class="tl-org">مجتمع التصنيع | Manufacturing Community</p>
+                        <p class="tl-meta">Jul 2024 – Present</p>
+                    </header>
+                </article>
+            </li>
+
+            <!-- 3) Microsoft LSAC -->
+            <li class="timeline-item">
+                <div class="tl-badge">
+                    <img src="Images/Microsoft.png" alt="Microsoft LSAC badge">
+                </div>
+                <article class="tl-card hover-fill">
+                    <header>
+                        <h3 class="tl-title">M&amp;D Sub-Leader</h3>
+                        <p class="tl-org">Microsoft LSAC</p>
+                        <p class="tl-meta">Oct 2023 - Jul 2025</p>
+                    </header>
+                </article>
+            </li>
+
+            <!-- 4) KAU Sub-Sport Committee -->
+            <li class="timeline-item">
+                <div class="tl-badge">
+                    <img src="Images/sport.png" alt="KAU logo">
+                </div>
+                <article class="tl-card hover-fill">
+                    <header>
+                        <h3 class="tl-title">Graphic Designer at Sub-Sport Committee</h3>
+                        <p class="tl-org">King AbdulAziz University</p>
+                        <p class="tl-meta">Sep 2024 – May 2025</p>
+                    </header>
+                </article>
+            </li>
+        </ol>
+    </section>
+    <section class="cd-wrap" aria-labelledby="cd-title">
+        <h2 id="cd-title" class="section-title">Graduation countdown</h2>
+
+        <div class="cd">
+            <div class="cd-box">
+                <span class="cd-num" id="cd-days">0</span>
+                <span class="cd-label">Days</span>
+            </div>
+            <div class="cd-box">
+                <span class="cd-num" id="cd-hours">0</span>
+                <span class="cd-label">Hours</span>
+            </div>
+            <div class="cd-box">
+                <span class="cd-num" id="cd-mins">0</span>
+                <span class="cd-label">Minutes</span>
+            </div>
+            <div class="cd-box">
+                <span class="cd-num" id="cd-secs">0</span>
+                <span class="cd-label">Seconds</span>
+            </div>
+        </div>
+
+        <!-- Message shown if the date is reached or passed -->
+        <p class="cd-done" id="cd-done" hidden>Graduation 🎉</p>
+    </section>
+    
+    <script>
+
+        (function () {
+            const target = new Date(2026, 5, 1, 0, 0, 0); // June 1, 2026 00:00
+
+            // Grab elements once
+            const elDays = document.getElementById('cd-days');
+            const elHours = document.getElementById('cd-hours');
+            const elMins = document.getElementById('cd-mins');
+            const elSecs = document.getElementById('cd-secs');
+            const elDone = document.getElementById('cd-done');
+
+            // Helper: pad numbers to 2 digits (for hours/mins/secs)
+            const pad2 = n => String(n).padStart(2, '0');
+
+            function tick() {
+                const now = new Date();
+                const diff = target - now; // milliseconds remaining
+
+                if (diff <= 0) {
+                    // Reached or passed June 2026 → freeze at zeros and show message
+                    elDays.textContent = '0';
+                    elHours.textContent = '00';
+                    elMins.textContent = '00';
+                    elSecs.textContent = '00';
+                    elDone.hidden = false;
+                    clearInterval(timer);
+                    return;
+                }
+
+                // Convert ms → d/h/m/s
+                const totalSeconds = Math.floor(diff / 1000);
+                const days = Math.floor(totalSeconds / (3600 * 24));
+                const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
+                const mins = Math.floor((totalSeconds % 3600) / 60);
+                const secs = totalSeconds % 60;
+
+                // Update UI
+                elDays.textContent = days;
+                elHours.textContent = pad2(hours);
+                elMins.textContent = pad2(mins);
+                elSecs.textContent = pad2(secs);
+            }
+
+            // First paint immediately, then tick every second
+            tick();
+            const timer = setInterval(tick, 1000);
+        })();
+    </script>
+
+    <!-- ===================== Footer ===================== -->
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Rana Alsaggaf | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Sets the current year dynamically in the footer (e.g., 2025)
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
