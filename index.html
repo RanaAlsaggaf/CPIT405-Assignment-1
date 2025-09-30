@@ -5,6 +5,7 @@
     <!-- Basic metadata & responsive viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rana Alsaggaf" />
 
     <!-- Page title shown in browser tab -->
     <title>Rana Portfolio</title>
@@ -160,7 +161,7 @@
     <section class="experience" id="experience">
         <h2 class="section-title">Experience</h2>
 
-        <!-- Internship card: company image + details -->
+        <!-- Internship card -->
         <article class="exp-card outline ">
             <figure class="exp-media">
                 <img src="Images/saudia-technic.PNG" alt="IT COOP Trainee at Saudia Technic">
@@ -202,7 +203,21 @@
 
         <!-- Ordered list creates the vertical timeline -->
         <ol class="timeline">
-            <!-- 1) TechHub -->
+            <!-- 1) Manufacturing Community -->
+            <li class="timeline-item">
+                <div class="tl-badge">
+                    <img src="Images/Manufacturing Community.png" alt="Manufacturing Community logo">
+                </div>
+                <article class="tl-card hover-fill">
+                    <header>
+                        <h3 class="tl-title">Media and Marketing Department Sub-Leader</h3>
+                        <p class="tl-org">مجتمع التصنيع | Manufacturing Community</p>
+                        <p class="tl-meta">Jul 2024 – Present</p>
+                    </header>
+                </article>
+            </li>
+
+            <!-- 2) TechHub -->
             <li class="timeline-item">
                 <div class="tl-badge">
                     <img src="Images/TechHub.png" alt="TechHub logo">
@@ -216,19 +231,6 @@
                 </article>
             </li>
 
-            <!-- 2) Manufacturing Community -->
-            <li class="timeline-item">
-                <div class="tl-badge">
-                    <img src="Images/Manufacturing Community.png" alt="Manufacturing Community logo">
-                </div>
-                <article class="tl-card hover-fill">
-                    <header>
-                        <h3 class="tl-title">Media and Marketing Department Member</h3>
-                        <p class="tl-org">مجتمع التصنيع | Manufacturing Community</p>
-                        <p class="tl-meta">Jul 2024 – Present</p>
-                    </header>
-                </article>
-            </li>
 
             <!-- 3) Microsoft LSAC -->
             <li class="timeline-item">
@@ -259,8 +261,10 @@
             </li>
         </ol>
     </section>
+
+    <!-- Graduation countdown -->
     <section class="cd-wrap" aria-labelledby="cd-title">
-        <h2 id="cd-title" class="section-title">Graduation countdown</h2>
+        <h2 id="cd-title" class="section-title">Graduation Countdown</h2>
 
         <div class="cd">
             <div class="cd-box">
@@ -281,10 +285,9 @@
             </div>
         </div>
 
-        <!-- Message shown if the date is reached or passed -->
-        <p class="cd-done" id="cd-done" hidden>Graduation 🎉</p>
+        <p class="cd-done" id="cd-done" hidden>Graduation</p>
     </section>
-    
+
     <script>
 
         (function () {

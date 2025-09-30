@@ -5,6 +5,7 @@
     <!-- Basic metadata & responsive viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rana Alsaggaf" />
 
     <!-- Page title shown in the browser tab -->
     <title>Contact</title>
@@ -43,14 +44,14 @@
         <form class="contact-form" method="post" action="https://webhook.site/3501de94-6784-49be-96a6-6ebaa1e4aace"
             accept-charset="UTF-8" autocomplete="on">
 
-            <!-- Name (required text input with basic length constraints) -->
+            <!-- Name -->
             <div class="field">
                 <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
                 <input id="name" name="name" type="text" placeholder="Your full name" required minlength="2"
                     maxlength="60" />
             </div>
 
-            <!-- Email (optional; uses email input + browser validation) -->
+            <!-- Email -->
             <div class="field">
                 <label for="email">Email (optional)</label>
                 <input id="email" name="email" type="email" inputmode="email" autocomplete="email"
@@ -62,7 +63,7 @@
                 <textarea id="message" name="message" rows="10" placeholder="Write your message…"></textarea>
             </div>
 
-            <!-- Message Type (required radio group; user must choose one) -->
+            <!-- Message Type -->
             <fieldset class="field">
                 <legend>Message Type <span class="req" aria-hidden="true">*</span></legend>
 
